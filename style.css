@@ -1,0 +1,18 @@
+.container {
+ 
+    height: 300px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: black 0px 1px 15px 8px;
+}
+
+.custom-bg {
+  --bs-gradient: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 2%,
+    rgba(200, 5, 5, 1) 23%,
+    rgba(12, 51, 201, 1) 75%
+  );
+  background-image: var(--bs-gradient);
+}

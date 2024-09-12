@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="background-image: custom-bg">
+    <header class="text-center text-light p-5">
+      <h1>Currency converter</h1>
+    </header>
+
+    <div
+      class="container text-center mt-5 d-flex flex-wrap overflow-auto w-100 p-2" style=" max-width: 600px;"
+    >
+      <div class="main row mx-auto">
+        <div class="col-sm-4 mt-1 mx-auto">
+        <div class="input-group mx-auto  col-sm-4 mt-1">
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Select Country</option>
+              
+            </select>
+          </div>
+        </div>
+
+          <div class="col-sm-4 mt-1 mx-auto">
+            <div class="input-group ">
+                <select class="form-select" id="inputGroupSelect02">
+                  <option selected>Select Country</option>
+                  
+                </select>
+              </div>
+            </div>
+    
+
+      <div class="row col-12 mx-auto">
+        <div class="mx-auto my-auto col-sm-4">
+          <div class="input-group-md" id="inputs">
+            <input
+              type="number"
+              class="form-control mt-2 text-center"
+              id="subject"
+              placeholder="Enter Currency value"
+              aria-label="uservalue"
+            />
+
+            <input
+              type="text"
+              class="form-control mt-2 text-center"
+              id="result"
+              placeholder="Results"
+              aria-label="results"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row text-break col-12 mx-auto">
+        <div class="col-sm-5 mx-auto">
+          <button type="button" class="btn btn-info w-100" id="converter">Convert</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
